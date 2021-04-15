@@ -9,9 +9,8 @@ before_install:
 
 script:
   - docker run -e CI=true yrroth/docker-react npm run test
-
 deploy:
-  edge: true
+  #edge: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker-react"
