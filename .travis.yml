@@ -9,10 +9,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
-  app: docker-react
-  env: dockerreact-env
+  app: nginx-app
+  env: nginxapp-env
   bucket_name: elasticbeanstalk-us-east-2-542961975769
-  bucket_path: docker-react
+  bucket_path: nginx-app
   'on':
     branch: master
   #Testing Permissions
